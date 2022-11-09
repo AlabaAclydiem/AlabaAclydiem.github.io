@@ -1,0 +1,183 @@
+.ingridients
+{ 
+    background-image: url(../images/bg5.png) ;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    height: fit-content;
+    text-align: right;
+    padding-top: 100px;
+    padding-bottom: 101px;
+}
+.ingridients_text
+{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  padding: 0px 70px 65px 70px;
+  max-width: 430px;
+  width: 50%;
+  background-color : rgba(0, 0, 0, 0.7);
+}
+
+.ingridients_fake {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 215px;
+  width: 5%;
+  min-width: 30px;
+  height: 557px;
+}
+
+.ingridients p
+{
+  padding-bottom: 30px;
+  margin-top: 25px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: white; 
+  font-weight: lighter; 
+  line-height: 120%;
+}
+
+.ingridients_text h6
+{
+  padding-top: 70px;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-family: 'Yeseva One', cursive;
+  font-weight: lighter;
+}
+
+
+.ingridients_images 
+{
+  justify-content: center;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  padding-bottom: 10px;
+  margin: 0px 10px 0px 10px
+}
+
+.menu
+{ 
+    background-image: url(../images/pattern1.png),
+                      url(../images/background.png);
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-size: cover;
+
+    padding: 100px 0px 100px 0px;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.menu_half {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 460px;
+  width: 50%;
+  height: fit-content;
+  text-align: center;
+  margin: 0px 15px 0px 15px;
+  padding: 0px 55px 0px 55px;
+}
+
+.menu_part {
+  width: 100%;
+  height: fit-content;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.menu_header {
+  text-align: center;
+  max-width: 460px;
+  width: 100%;
+  height: fit-content; 
+}
+
+.menu_spec {
+  max-width: 460px;
+  width: 100%;
+  height: fit-content;
+  text-align: right;
+}
+
+.menu_spec_content {
+  background-color: #cdaa46;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  width: 70px;
+  height: 20px;
+}
+
+.menu_content {
+  padding-top: 10px;
+  border: 1px solid #cdaa46;
+}
+
+.menu_content_upper {
+  max-width: 460px;
+  width: 100%;
+  height: fit-content;
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: 'Yeseva One', cursive;
+  color: #cc9900;
+}
+
+.menu_name {
+  width: 48%;
+  display: inline-block;
+  height: fit-content;
+  text-align: left;
+}
+
+.menu_price {
+  width: 48%;
+  display: inline-block;
+  height: fit-content;
+  text-align: right;
+}
+
+.menu_line {
+  max-width: 460px;
+  width: 100%;
+  height: fit-content;
+  vertical-align: center;
+}
+
+@media screen and (max-width: 900px){
+  .menu_line {
+     display: none;
+  }
+
+}
+
+.menu_content_lower {
+  max-width: 460px;
+  width: 100%;
+  padding: 10px;
+}
+
+.menu_text {
+  font-size: 16px; 
+  font-family: 'Lato', sans-serif; 
+  font-weight: lighter;
+  text-align: left;
+}
+
+.nonborder {
+  border: 0px;
+}
+
+.nonvisible {
+  visibility: hidden;
+}

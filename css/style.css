@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  .header {
+    width: 100%;
+    height: 90px;
+    box-shadow: inset 0 90px 20px -10px rgba(0,0,0,0.3);
+    z-index: 100;
+    position: fixed;
+  }
+  
+  .header_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  .header__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .header__logo-wrapper {
+    margin-left: 12%;
+    margin-top: 47px;
+    display: block;
+  }
+  
+  .header__logo {
+    text-transform: uppercase;    
+    color: #e2e0e0;
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+  }
+  
+  
+  .header__contents {
+    margin-left: 10%; 
+    margin-top: 54px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .header__contents .text{
+    padding-left: 26px;
+    padding-right: 26px;
+    color: #e2e0e0;
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 21px; 
+  }
+  
+  .header__contents .text:hover{
+    padding-top: 51px;
+    border-top: 3px solid #c8c4b6;
+  }
+  
+  .header__contents .icon{
+    padding-right: 20px;
+    color: #dab33e;
+    font-size: 21px;
+  }
+  
+  .promo{
+    background: url(../images/Bg3.png) no-repeat fixed; 
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column!important;
+    justify-content: center!important;
+    width: 100%;
+    height: 750px;
+  }
+
+  .promo__inner{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .promo__logo-wrapper h1{
+    color: #f3f3f3;
+    font-family: 'Yeseva One', cursive; 
+    font-size: 90px;
+    font-weight: lighter;
+    text-align: center;
+  }
+  
+  .promo__inner .line{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .promo__inner .buttons{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+  }
+
+  .promo__inner .buttons a{
+    text-align: center;
+    text-transform: uppercase;
+
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: lighter; 
+  }
+
+  .button_property{
+    vertical-align: top;
+    display: inline-block;
+    width: 225px;
+    height: 56px;
+    margin: 30px;
+    line-height: 56px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .button_property::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    z-index: -1;
+  }
+  
+  .button_left{
+    border: 1px solid black; 
+  } 
+
+  .button_left::after{
+    background: black;
+  }
+
+  .button_right{
+    border: 1px solid #d4cfb4;
+  } 
+
+  .button_right::after{
+    background: #d4cfb4;
+  }
+
+  .about{
+    background: url(../images/pattern.png) repeat, 
+                url(../images/background_about.png) repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column!important;
+    justify-content: center!important;
+    width: 100%;
+    height: 710px;
+  }
+
+  .about__inner{
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom:auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+
+  .about__parts{
+    display: block;
+    height: 100%;
+  }
+  
+  .about__inner .about__left{
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    width: 514px;
+  }
+
+  .about__inner .about__right{
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+    width: 514px;
+  }
+
+  .about__logo-wrapper{
+    color: #cc9900;
+    font-family: 'Yeseva One', cursive; 
+    font-size: 36px;
+    font-weight: lighter;
+  }
+  
+  .about__left .line{
+    margin-top: 12px;
+    margin-bottom: 17px;
+  }
+
+  .about__content-text{
+    color: #4c4c4c;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+  }
+  
+  .the_cook{
+    margin-top: 40px;
+    margin-left: 75px;
+  }
+
+  .about__right .dish{
+    margin-left: -3%;
+    margin-top: -10%;
+  }
+  
+@media screen and (max-width: 1500px){
+    .header__contents a{
+        display: none;
+    }
+  }
+@media screen and (max-width: 620px){
+    .promo__logo-wrapper h1{
+        font-size: 50px;
+    }
+  }
+@media screen and (max-width: 1050px){
+    .about__inner .about__right{
+          display: none;
+    }
+  }
+
+  .reviews {
+    background: url(../images/Bg6.png) no-repeat fixed; 
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    background-position: center;
+    background-size: cover;
+    flex-direction: column!important;
+    justify-content: center!important;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 101px;
+  }
+
+  .gdiv {
+    max-width: 770px;
+    width: 90%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.82);
+    display: inline-block;
+    text-align: center;
+  }
+
+  .reservations {
+    width: 100%;
+    height: fit-content;
+    padding: 100px 0px 103px 0px;
+    background: url(../images/pattern.png) no-repeat,
+                url(../images/background2.png) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.rimg {
+  width: 270px;
+  height: 508px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  padding: 0px;
+}
+
+.rdiv {
+  max-width: 570px;
+  width: 90%;
+  height: fit-content;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  
+}
+
+.rdiv h6 {
+  color: #cc9900;
+  font-family: 'Yeseva One', cursive;
+  font-size: 36px;
+  font-weight: lighter;
+}
+
+.rdiv p {
+  color: #4c4c4c;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  margin-bottom: 25px;
+  padding: 0px 70px 0px 70px;
+}
+
+.rdiv form {
+  padding: 0px 50px 0px 50px;
+}
+
+.rdiv form div {
+  display: inline-block;
+  text-align: left;
+  margin: 0px 15px 30px 15px;
+}
+
+.rdiv form label, .rdiv form input {
+  display: block;
+}
+
+.rdiv form label {
+  color: #cc9900;
+  font-size: 14px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+}
+
+.rdiv form div input {
+  width: 184px;
+  height: 36px;
+  padding-left: 16px;
+  border: 1px solid #c8c6c6;
+  outline: none;
+}
+
+.rdiv form div select {
+  width: 200px;
+  height: 36px;
+  border: 1px solid #c8c6c6;
+  padding-left: 10px;
+  outline: none;
+}
+
+.rdiv form div select:focus, .rdiv form div input:focus {
+  border: 1px solid #cc9900;
+}
+
+.rdiv form div input::placeholder {
+  font-style: italic;
+  color: #7c7c7c;
+}
+
+.rdiv form div select:required:invalid{
+  font-style: italic;
+  color: #7c7c7c;
+}
+
+.rdiv form div select option {
+  color: black;
+  font-style: normal;
+  padding-left: 10px;
+}
+
+#date {
+  width: 154px;
+  padding-right: 30px;
+  background: url(../images/cal.png) no-repeat right;
+  background-size: 25px;
+}
+
+#but {
+  width: 200px;
+  height: 36px;
+  background-color: #c9a131;
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  border: 0px;
+}
+
+footer {
+  width: 100%;
+  padding-top: 52px;
+  padding-bottom: 50px;
+  height: fit-content;
+  text-align: center;
+  background-color: #191919;
+}
+
+.fdiv {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  height: 218px;
+  width: 390px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.fdiv h6 {
+  color: #f3f3f3;
+  font-family: 'Yeseva One', cursive;
+  font-size: 21px;
+  font-weight: lighter;
+}
+
+.fdiv p {
+  color: #f3f3f3;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.fdiv .ficon {
+  color: #f3f3f3;
+  font-size: 16px;
+  margin: 50px 5px 0px 5px;
+    
+}
+
+@media screen and (max-width: 640px){
+  .rimg {
+     display: none;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
