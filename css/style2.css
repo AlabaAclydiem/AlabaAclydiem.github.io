@@ -1,19 +1,26 @@
-.ingridients
+.ingredients
 { 
-    background-image: url(../images/bg5.png) ;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+  background-image: url(../images/bg5.png) ;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 
-    width: 100%;
-    height: fit-content;
-    text-align: right;
-    padding-top: 100px;
-    padding-bottom: 101px;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-.ingridients_text
+
+.ing_flex{
+  display: flex;
+  flex-basis: 80%;
+  justify-content: flex-end;
+}
+
+.ingredients_text
 {
-  display: inline-block;
+  position: relative;
+  display: inline-block; 
   vertical-align: middle;
   text-align: center;
   color: white;
@@ -23,16 +30,7 @@
   background-color : rgba(0, 0, 0, 0.7);
 }
 
-.ingridients_fake {
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 215px;
-  width: 5%;
-  min-width: 30px;
-  height: 557px;
-}
-
-.ingridients p
+.ingredients_paragraph
 {
   padding-bottom: 30px;
   margin-top: 25px;
@@ -43,7 +41,7 @@
   line-height: 120%;
 }
 
-.ingridients_text h6
+.ingredients_header
 {
   padding-top: 70px;
   margin-bottom: 15px;
@@ -53,131 +51,128 @@
 }
 
 
-.ingridients_images 
+.ingredients_images 
 {
   justify-content: center;
   flex-wrap: wrap;
   vertical-align: middle;
   padding-bottom: 10px;
-  margin: 0px 10px 0px 10px
+  margin: 0px 10px
 }
 
 .menu
 { 
-    background-image: url(../images/pattern1.png),
+  background-image: url(../images/pattern1.png),
                       url(../images/background.png);
-    background-attachment: scroll;
-    background-repeat: repeat;
-    background-size: cover;
+  background-attachment: scroll;
+  background-repeat: repeat;
+  background-size: cover;
 
-    padding: 100px 0px 100px 0px;
-    text-align: center;
-    width: 100%;
-    height: fit-content;
+  display: flex; 
+  flex-wrap: wrap;
+  padding: 100px 0px;
+  justify-content: center;
 }
 
-.menu_half {
-  display: inline-block;
-  vertical-align: middle;
+.m_half {
+  display: flex; 
+  flex-direction: column;
   max-width: 460px;
-  width: 50%;
-  height: fit-content;
-  text-align: center;
-  margin: 0px 15px 0px 15px;
-  padding: 0px 55px 0px 55px;
+  justify-content: center;
+  margin: 0 15px 50px 15px;
+  padding: 0px 55px;
 }
 
-.menu_part {
-  width: 100%;
-  height: fit-content;
+.m_hder {
+  text-align: center;
+  max-width: 460px;
+}
+
+.m_hder_txt {
   margin-top: 50px;
-  margin-bottom: 50px;
+  font-size: 36px; 
+  font-family: 'Yeseva One', cursive; 
+  color: #cc9900; 
+  font-weight: lighter;
 }
 
-.menu_header {
-  text-align: center;
-  max-width: 460px;
-  width: 100%;
-  height: fit-content; 
+.m_div {
+  max-width: 240px; 
+  margin-top: 15px;
+  align-self: center;
 }
 
-.menu_spec {
+.m_spc {
   max-width: 460px;
-  width: 100%;
-  height: fit-content;
+  height: 20px;
   text-align: right;
 }
 
-.menu_spec_content {
+.m_spc_txt {
+  font-size: 16px; 
+  font-family: 'Lato', sans-serif; 
+  font-weight: lighter;
+
   background-color: #cdaa46;
-  text-align: center;
-  display: inline-block;
   vertical-align: middle;
   color: white;
   width: 70px;
   height: 20px;
+
+  display: inline-table;
+  text-align: center;
 }
 
-.menu_content {
-  padding-top: 10px;
-  border: 1px solid #cdaa46;
+.m_cnt {
+  padding-top: 30px;
 }
 
-.menu_content_upper {
+.m_cnt_up {
   max-width: 460px;
-  width: 100%;
-  height: fit-content;
   font-size: 24px;
   font-weight: lighter;
   font-family: 'Yeseva One', cursive;
   color: #cc9900;
 }
 
-.menu_name {
+.m_name {
   width: 48%;
   display: inline-block;
-  height: fit-content;
   text-align: left;
 }
 
-.menu_price {
+.m_price {
   width: 48%;
   display: inline-block;
-  height: fit-content;
   text-align: right;
 }
 
-.menu_line {
-  max-width: 460px;
-  width: 100%;
-  height: fit-content;
+.m_line {
+  max-width: 430px;
   vertical-align: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 900px){
-  .menu_line {
+  .m_line {
      display: none;
   }
 
 }
 
-.menu_content_lower {
+.m_cnt_dwn {
   max-width: 460px;
-  width: 100%;
   padding: 10px;
 }
 
-.menu_text {
+.m_txt {
   font-size: 16px; 
   font-family: 'Lato', sans-serif; 
   font-weight: lighter;
   text-align: left;
 }
 
-.nonborder {
-  border: 0px;
-}
-
-.nonvisible {
-  visibility: hidden;
+.spc {
+  border: 1px solid #cdaa46;
+  padding-top: 10px;
 }
