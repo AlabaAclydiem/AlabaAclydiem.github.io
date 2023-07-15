@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+  }
+
+body {
+    min-height: 100%;
+    background-color: black;
+    background-image: url(../pictures/basket.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.cloud_with_text {
+    top: 30px;
+    left: 240px;
+    position: relative;
+}
+
+#cloud_text {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    font-size: large;
+    color: black;
+    opacity: 0;
+}
+
+#cloud {
+    max-width: 500px;
+    height: auto;
+    opacity: 0;
+}
+
+.coupon {
+    width: 130px;
+    height: auto;
+    opacity: 1;
+    display: block;
+}
+
+.coupon_left {
+    position: relative;
+    left: 280px;
+    top: 10px;
+}
+
+.coupon_right {
+    position: relative;
+    left: 1500px;
+    top: -480px;
+}
